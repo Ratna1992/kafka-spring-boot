@@ -1,0 +1,5 @@
+package com.ratna.kafa.spring.boot.consumer;
+
+public class MyTopicConsumer {
+
+}

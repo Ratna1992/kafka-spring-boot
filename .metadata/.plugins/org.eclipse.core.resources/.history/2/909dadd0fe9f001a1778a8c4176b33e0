@@ -1,0 +1,8 @@
+package com.ratna.kafa.spring.boot.producer;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ProducerConfiguration {
+
+}

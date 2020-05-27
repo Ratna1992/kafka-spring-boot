@@ -1,0 +1,13 @@
+package com.ratna.kafa.spring.boot.producer;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class KafkaProducerService {
+	
+	 private static final String KAFKA_BROKER = "localhost:9092";
+	 
+	
+
+
+}

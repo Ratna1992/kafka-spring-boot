@@ -1,0 +1,17 @@
+package com.ratna.kafa.spring.boot.service;
+
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.ratna.kafa.spring.boot.dto.Employee;
+
+@Service
+public class KafkaListenerService {
+	@KafkaListener(topics = { "test" })
+    public void getTopics(@RequestBody String emp) {
+        System.out.println("Kafka event consumed is: " + emp);
+        Employee model = gson.fromJson(emp, Employee.class);
+        System.out.println("Model converted value: " + model.toString());
+    }
+}

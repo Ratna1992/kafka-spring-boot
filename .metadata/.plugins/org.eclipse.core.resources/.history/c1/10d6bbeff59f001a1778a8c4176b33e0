@@ -1,0 +1,19 @@
+package com.ratna.kafa.spring.boot.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class KafkaController {
+
+	@Autowired
+	KafkaSender kafkaSender;
+
+	@GetMapping("/kafka/produce")
+	public void produce(@RequestParam String message) {
+		template.send("myTopic", message);
+	}
+
+}

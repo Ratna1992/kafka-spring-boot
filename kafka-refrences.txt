@@ -1,0 +1,6 @@
+https://www.javainuse.com/spring/spring-boot-apache-kafka-hello-world
+
+https://asbnotebook.com/2019/10/28/apache-kafka-producer-consumer-example-with-spring-boot/
+
+https://www.javatpoint.com/apache-kafka
+
